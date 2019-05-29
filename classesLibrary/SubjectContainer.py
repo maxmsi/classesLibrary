@@ -13,15 +13,24 @@ class   SubjectContainer(object):
         self.classes.append(Subject("Knowledge of culture", "J.A Graham", True, False))
 
 
-    def getStrictClasses(self, classes):
-
-        for i in classes:
-            if self.classes[i].isStrictClasses == True:
-                print(classes[i])
+    def getStrictClasses(self,classes):
+        classesLenght = len(classes)
+        temp=[]
+        for i in range(classesLenght):
+            if self.classes[i].strictClasses is True:
+                 temp.append(classes[i])
+        for i in range(3):
+            print(temp[i])
 
     def getHumanitiesClasses(self,classes):
+        classesLenght = len(classes)
+        temp=[]
+        for i in range(classesLenght):
+            if self.classes[i].humanities is True:
+                temp.append(classes[i])
+        for i in range(3):
+            print(temp[i])
 
-        for i in classes:
-            if self.classes[i].humanities == True:
-                print(classes[i])
+    def getReleaseInfo(self):
+        return "Release version v0.1"
 
