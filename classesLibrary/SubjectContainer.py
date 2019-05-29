@@ -32,5 +32,5 @@ class   SubjectContainer(object):
             print(temp[i])
 
     def getReleaseInfo(self):
-        return "Release version v0.1"
+        return "Release version v0.3-newest"
 
